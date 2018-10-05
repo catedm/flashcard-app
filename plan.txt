@@ -1,0 +1,42 @@
+Flashcards for coders app!
+
+Features:
+  - Decks
+  - Cards
+
+What can be added to cards?
+  - Code snippets:
+    - Ruby
+    - Javascript
+    - HTML
+    - CSS
+  - Text
+
+To Use:
+  - Node.js
+  - UIKit
+
+Classes:
+  - Deck
+    - can have as many cards as needed
+  - Card
+    - front and back
+
+Funcionality:
+  - Add deck
+  - Remove deck
+  - Add card
+  - Remove card
+  - Edit card
+  - Study deck
+  - 
+
+How will study work?
+  - Loop over cards
+  - End when loop ends
+
+UI Notes:
+  -
+
+To Do:
+  - Get app working in the console with objects etc.

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+  <title>FlashCards for Coders</title>
+</head>
+
+<body>
+  <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
+      <div class="uk-navbar-center">
+
+          <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="#">Decks</a></li>
+              <li><a href="#modal-example" uk-toggle>Add Deck</a></li>
+          </ul>
+
+      </div>
+  </nav>
+
+  <div id="modal-example" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+          <h2 class="uk-modal-title">Add Deck</h2>
+          <div class="uk-margin">
+              <input class="add-deck-input uk-input" type="text" placeholder="Name">
+          </div>
+          <p class="uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+              <button class="add-deck-submit uk-button uk-button-primary" type="button">Add</button>
+          </p>
+      </div>
+  </div>
+
+  <div class="uk-section">
+    <div class="uk-container">
+      <table class="uk-table uk-table-hover uk-table-divider">
+          <thead>
+              <tr>
+                  <th>Decks</th>
+                  <th>Cards</th>
+                  <th>Options</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+              </tr>
+              <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+              </tr>
+              <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+  <script src="build/app.bundle.js"></script>
+</body>
+
+</html>
