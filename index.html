@@ -7,22 +7,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- UIkit CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+  <link rel="stylesheet" href="css/main.css">
   <title>FlashCards for Coders</title>
 </head>
 
 <body>
   <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
       <div class="uk-navbar-center">
-
           <ul class="uk-navbar-nav">
               <li class="uk-active"><a href="#">Decks</a></li>
-              <li><a href="#modal-example" uk-toggle>Add Deck</a></li>
+              <li><a href="#add-deck-modal" uk-toggle>Add Deck</a></li>
           </ul>
-
       </div>
   </nav>
 
-  <div id="modal-example" uk-modal>
+  <div id="add-deck-modal" class="add-deck-modal" uk-modal>
       <div class="uk-modal-dialog uk-modal-body">
           <h2 class="uk-modal-title">Add Deck</h2>
           <div class="uk-margin">
@@ -35,9 +34,22 @@
       </div>
   </div>
 
-  <div class="uk-section">
+  <div id="rename-deck-modal" class="rename-deck-modal" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+          <h2 class="uk-modal-title">Rename Deck</h2>
+          <div class="uk-margin">
+              <input class="rename-deck-input uk-input" type="text" placeholder="Name">
+          </div>
+          <p class="uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+              <button class="rename-deck-submit uk-button uk-button-primary" type="button">Submit</button>
+          </p>
+      </div>
+  </div>
+
+  <div class="uk-section uk-padding-small">
     <div class="uk-container">
-      <table class="uk-table uk-table-hover uk-table-divider">
+      <table class="deck-table uk-table uk-table-hover uk-table-divider">
           <thead>
               <tr>
                   <th>Decks</th>
@@ -45,22 +57,7 @@
                   <th>Options</th>
               </tr>
           </thead>
-          <tbody>
-              <tr>
-                  <td>Table Data</td>
-                  <td>Table Data</td>
-                  <td>Table Data</td>
-              </tr>
-              <tr>
-                  <td>Table Data</td>
-                  <td>Table Data</td>
-                  <td>Table Data</td>
-              </tr>
-              <tr>
-                  <td>Table Data</td>
-                  <td>Table Data</td>
-                  <td>Table Data</td>
-              </tr>
+          <tbody class="deck-table-body uk-table-middle">
           </tbody>
       </table>
     </div>

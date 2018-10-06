@@ -11,6 +11,7 @@ class Decks {
       dateAdded: new Date()
     });
     console.log('deck added...');
+    this.logDecks();
   };
 
   generateDeckId() {
@@ -105,6 +106,10 @@ class Decks {
     }
 
     return deck.cards;
+  }
+
+  renameDeck(id) {
+
   }
 }
 
